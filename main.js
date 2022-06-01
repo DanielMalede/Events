@@ -61,16 +61,16 @@ function lotu() {
     var theButton = document.createElement("button")
     theButton.innerText = "click me"
     document.body.append(theButton)
-    var rndNum = Math.floor(Math.random()*57) 
+    var h1 = document.getElementById("h1")
     var allUserNumber = []
     for ( i = 0; i < 5; i++) {
         var userNumber = +prompt("enter number")
         allUserNumber.push(userNumber) 
     }
-    for (var i = 0; i < 5; i++) {
-        theButton.onclick=function(){ theButton.innerText+=(allUserNumber[i])}
-        
+    theButton.onclick =  function () {
+        for (var j = 0; j < 5; j++) {
+            h1.innerText+= (allUserNumber[j])
+        }
     }
-
 }
 lotu()
