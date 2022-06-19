@@ -57,20 +57,29 @@
 //     h1_Text.style = "color: green"
 // }
 
-function lotu() {
-    var theButton = document.createElement("button")
-    theButton.innerText = "click me"
-    document.body.append(theButton)
-    var h1 = document.getElementById("h1")
-    var allUserNumber = []
-    for ( i = 0; i < 5; i++) {
-        var userNumber = +prompt("enter number")
-        allUserNumber.push(userNumber) 
-    }
-    theButton.onclick =  function () {
-        for (var j = 0; j < 5; j++) {
-            h1.innerText+= (allUserNumber[j])
-        }
-    }
+// function lotu() {
+//     var theButton = document.createElement("button")
+//     theButton.innerText = "click me"
+//     document.body.append(theButton)
+//     var h1 = document.getElementById("h1")
+//     var allUserNumber = []
+//     for ( i = 0; i < 5; i++) {
+//         var userNumber = +prompt("enter number")
+//         allUserNumber.push(userNumber) 
+//     }
+//     theButton.onclick =  function () {
+//         for (var j = 0; j < 5; j++) {
+//             h1.innerText+= (allUserNumber[j])
+//         }
+//     }
+// }
+// lotu()
+document.getElementById
+var array=[]
+var intervalId;
+function printNames(){
+    array.push(user_number.value);
+    console.log(array);
 }
-lotu()
+
+
